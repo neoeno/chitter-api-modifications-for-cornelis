@@ -32,7 +32,41 @@ To see code coverage: TBD
 
 Jasmine & Karma -- as the testing frameworks  
 
+## User Stories
+
+As a visitor  
+So that I can see what is going on in the world  
+I want to see all Peeps by all users  
+
+As a visitor  
+So that I can have a closer look at interesting Peeps  
+I want to be able to see an individual Peep  
+
+As a visitor  
+So that I can post as me  
+I want to be able to create an account  
+
+As a registered user  
+So that I can use my account  
+I want to be able to log in  
+
+As a logged in user  
+So I can share what I am up to  
+I want to be able to post a Peep  
+
+As a logged in user  
+So that I can hide my embarrassing past  
+I want to be able to delete my Peeps  
+
+As a logged in user  
+So that I can show my appreciation for good content  
+I want to be able to like a Peep  
+
+As a logged in user  
+So that I can change my mind  
+I want to be able to unlike a Peep  
+
 ## Authors
 
 The good people at [Makers Academy](https://makers.tech/) -- instructions  
-[Cornelis Heuperman](https://github.com/heuperman) -- code, tests and design
+[Cornelis Heuperman](https://github.com/heuperman) -- user stories, tests and design
