@@ -7,7 +7,6 @@
 
   Controller.prototype.showPeepList = function () {
     return this.peepsModel.fetchPeeps()
-      .then(response => response.json())
       .then(peeps => this.peepsView.wrapInHTML(peeps))
       .then(wrappedPeeps => {
         this.doc.getElementById('peep-list').innerHTML = wrappedPeeps
