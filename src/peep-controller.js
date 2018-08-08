@@ -1,14 +1,17 @@
 (function(exports) {
-  function Controller() {
+  function Controller(doc) {
     this.peepsView = new PeepsView();
     this.peepsModel = new PeepsModel();
+    this.doc = doc;
   }
 
   Controller.prototype.showPeepList = function () {
-    this.peepsModel.fetchPeeps()
+    return this.peepsModel.fetchPeeps()
       .then(response => response.json())
       .then(peeps => this.peepsView.wrapInHTML(peeps))
-      .then(wrappedPeeps => document.getElementById('peep-list').innerHTML = wrappedPeeps);
+      .then(wrappedPeeps => {
+        this.doc.getElementById('peep-list').innerHTML = wrappedPeeps
+      });
   };
 
   exports.Controller = Controller;
